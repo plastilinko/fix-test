@@ -59,7 +59,7 @@
     <div class="steps  slide-left" ng-class="vm.slideDir" style="">
 
         <!--step1-->
-        <!-- ngIf: vm.steps[0] --><div ng-if="vm.steps[0]" class="ng-scope" style="">
+        <!-- ngIf: vm.steps[0] --><div ng-if="vm.steps[0]" class="ng-scope ng-animate ng-enter ng-enter-active" data-ng-animate="2" style="">
             <h4>Ввод данных</h4>
             <form name="formSum" role="form" class="ng-invalid ng-invalid-required ng-dirty ng-valid-parse">
                 <div class="form-group" ng-class="{ 'has-error': formSum.value1.$dirty &amp;&amp; formSum.value1.$error.required  }">
@@ -72,7 +72,7 @@
 
                 <div class="form-group" ng-class="{ 'has-error': formSum.value2.$dirty &amp;&amp; formSum.value2.$error.required  }">
                     <label class="control-label" for="value1">Значение 2</label>
-                    <input type="text" class="form-control ng-untouched ng-dirty-add ng-valid-parse-add ng-valid-add ng-invalid-remove ng-valid-required-add ng-invalid-required-remove ng-animate ng-pristine-remove ng-dirty ng-valid-parse ng-valid ng-valid-required ng-invalid-required-remove-active ng-valid-required-add-active ng-invalid-remove-active ng-valid-add-active ng-valid-parse-add-active ng-dirty-add-active ng-pristine-remove-active" id="value2" name="value2" aria-describedby="helpBlock2" ng-model="vm.number[1]" numbers-only="numbers-only" ng-change="vm.change()" required="" data-ng-animate="2" style="" />
+                    <input type="text" class="form-control ng-untouched ng-dirty ng-valid-parse ng-valid ng-valid-required" id="value2" name="value2" aria-describedby="helpBlock2" ng-model="vm.number[1]" numbers-only="numbers-only" ng-change="vm.change()" required="" />
                     <span id="helpBlock2" class="help-block ng-hide" ng-show="formSum.value2.$dirty &amp;&amp; formSum.value2.$error.required">
                         Обязательное поле для заполнения
                     </span>
